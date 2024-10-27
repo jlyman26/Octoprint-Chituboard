@@ -86,7 +86,7 @@ class Chituboard(   octoprint.plugin.SettingsPlugin,
 	def allowed(self):
 		if self._settings is None:
 			#self._logger.info("settings is none: %s " % self._settings.get(["allowedExten"]))
-			return str("cbddlp, photon, ctb, fdg, pws, pw0, pwms, pwmx")
+			return str("cbddlp, photon, ctb, fdg, pws, pw0, pwms, pwmx, px6s")
 		else:
 			#self._logger.info("add Extensions: %s " % self._settings.get(["allowedExten"]))
 			return str(self._settings.get(["allowedExten"]))
